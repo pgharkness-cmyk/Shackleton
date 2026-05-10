@@ -75,21 +75,7 @@ nav{
 .nav-links a:hover{
   color:white;
 }
-.mission-logo{
-  position:absolute;
-
-  top:92px;
-  right:42px;
-
-  width:220px;
-  height:auto;
-
-  object-fit:contain;
-
-  opacity:.95;
-
-  z-index:5;
-}/* HERO */
+/* HERO */
 
 .hero{
   position:relative;
@@ -227,6 +213,30 @@ h1{
   object-fit:contain;
 
   opacity:.95;
+
+  flex-shrink:0;
+}
+/* MISSION HEADER */
+
+.mission-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:40px;
+
+  margin-bottom:30px;
+}
+
+.mission-title{
+  flex:1;
+}
+
+.mission-page-logo{
+  width:120px;
+  height:auto;
+
+  display:block;
 
   flex-shrink:0;
 }
@@ -426,6 +436,15 @@ footer{
 /* MOBILE */
 
 @media(max-width:800px){
+  .mission-header{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.mission-page-logo{
+  width:90px;
+  margin-top:20px;
+}
 .mission-header{
   flex-direction:column;
   align-items:flex-start;
