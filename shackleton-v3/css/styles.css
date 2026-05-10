@@ -74,13 +74,26 @@ nav{
 .nav-links a:hover{
   color:white;
 }
+.mission-logo{
+  position:absolute;
 
-/* HERO */
+  top:92px;
+  right:42px;
+
+  width:220px;
+  height:auto;
+
+  object-fit:contain;
+
+  opacity:.95;
+
+  z-index:5;
+}/* HERO */
 
 .hero{
   position:relative;
 
-  min-height:520px;
+  min-height:430px;
 
   display:flex;
   align-items:center;
@@ -106,8 +119,8 @@ nav{
     ),
     url("../assets/images/earthrise.jpg");
 
-  background-size:cover;
-  background-position:center;
+  background-size:100% auto;
+  background-position:85% 52%;
 
   z-index:0;
 }
