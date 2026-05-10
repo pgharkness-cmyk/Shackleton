@@ -402,7 +402,14 @@ footer{
 /* MOBILE */
 
 @media(max-width:800px){
+.mission-header{
+  flex-direction:column;
+}
 
+.mission-page-logo{
+  width:120px;
+  height:120px;
+}
   .page{
     margin:0;
     border-radius:0;
