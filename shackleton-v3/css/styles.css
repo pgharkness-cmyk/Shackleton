@@ -106,8 +106,8 @@ nav{
     ),
     url("../assets/images/earthrise.jpg");
 
-background-size:88% auto;
-background-position:92% 62%;
+background-size:cover;
+background-position:92% 70%;
 background-repeat:no-repeat;
   z-index:0;
 }
