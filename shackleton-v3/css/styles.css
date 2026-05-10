@@ -85,7 +85,7 @@ nav{
   display:flex;
   align-items:center;
 
-  padding:40px 72px 80px 72px;
+  padding:80px 72px;
 
   overflow:hidden;
 
@@ -107,7 +107,7 @@ nav{
     url("../assets/images/earthrise.jpg");
 
   background-size:100% auto;
-  background-position:85% 52%;
+  background-position:92% 62%;;
 
   z-index:0;
 }
@@ -117,7 +117,7 @@ nav{
   z-index:2;
 
   max-width:680px;
-  padding-top:10px;
+  
 }
 
 .kicker{
