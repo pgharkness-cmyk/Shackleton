@@ -437,57 +437,150 @@ footer{
 /* MOBILE */
 
 @media(max-width:800px){
-  .mission-header{
-  flex-direction:column;
-  align-items:flex-start;
-}
 
-.mission-page-logo{
-  width:140px;
-  margin-top:20px;
-}
-.mission-header{
-  flex-direction:column;
-  align-items:flex-start;
-}
-
-.mission-page-logo{
-  width:100px;
-}
   .page{
     margin:0;
     border-radius:0;
   }
 
   nav{
-    padding:0 24px;
-    height:72px;
+    height:auto;
+
+    padding:18px 20px;
+
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:14px;
+  }
+
+  .logo{
+    font-size:16px;
+    letter-spacing:2px;
   }
 
   .nav-links{
-    gap:18px;
+    gap:14px;
+
+    flex-wrap:wrap;
   }
 
   .nav-links a{
-    font-size:11px;
+    font-size:10px;
+    letter-spacing:1px;
   }
 
   .hero{
-    min-height:420px;
+    min-height:520px;
 
-    padding:48px 24px;
+    padding:56px 24px 56px 24px;
+
+    align-items:flex-start;
+  }
+
+  .hero::before{
+    background-position:68% center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .kicker{
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    margin-bottom:14px;
   }
 
   h1{
-    font-size:42px;
+    font-size:56px;
+
+    line-height:.92;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
   }
 
   .hero p{
     font-size:18px;
+
+    line-height:1.45;
+
+    max-width:85%;
+
+    margin-bottom:120px;
+  }
+
+  .button{
+    padding:13px 18px;
+
+    font-size:11px;
   }
 
   .content-section{
     padding:40px 24px;
+  }
+
+  .mission-header{
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:24px;
+  }
+
+  .mission-page-logo{
+    width:120px;
+
+    margin-top:0;
+  }
+
+  .dark-band,
+  .light-section,
+  .events{
+    padding:28px 24px;
+  }
+
+  .features,
+  .split,
+  .event-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature{
+    border-right:0;
+
+    border-bottom:1px solid rgba(255,255,255,.14);
+
+    padding:24px 0;
+  }
+
+  .feature:last-child{
+    border-bottom:0;
+  }
+
+  .patron{
+    grid-template-columns:80px 1fr;
+  }
+
+  .patron img{
+    width:80px;
+    height:80px;
+  }
+
+  .quote{
+    font-size:16px;
+  }
+
+  .news-item{
+    grid-template-columns:100px 1fr;
+  }
+
+  .news-item img{
+    width:100px;
+    height:80px;
   }
 
   footer{
