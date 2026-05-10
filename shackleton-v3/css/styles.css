@@ -436,6 +436,8 @@ footer{
 
 /* MOBILE */
 
+/* MOBILE */
+
 @media(max-width:800px){
 
   .page{
@@ -451,73 +453,43 @@ footer{
     flex-direction:column;
     align-items:flex-start;
 
-    gap:14px;
+    gap:18px;
   }
 
   .logo{
-    font-size:16px;
-    letter-spacing:2px;
+    font-size:18px;
+    line-height:1.1;
   }
 
   .nav-links{
-    gap:14px;
-
+    display:flex;
     flex-wrap:wrap;
+
+    gap:14px 18px;
   }
 
   .nav-links a{
-    font-size:10px;
-    letter-spacing:1px;
+    font-size:11px;
   }
 
   .hero{
-    min-height:520px;
+    min-height:420px;
 
-    padding:56px 24px 56px 24px;
-
-    align-items:flex-start;
+    padding:48px 24px;
   }
 
   .hero::before{
-    background-position:68% center;
-  }
-
-  .hero-content{
-    max-width:100%;
-  }
-
-  .kicker{
-    font-size:11px;
-
-    letter-spacing:2px;
-
-    margin-bottom:14px;
+    background-size:140% auto;
+    background-position:65% 100%;
   }
 
   h1{
-    font-size:56px;
-
-    line-height:.92;
-
-    letter-spacing:2px;
-
-    margin-bottom:18px;
+    font-size:42px;
+    line-height:.95;
   }
 
   .hero p{
     font-size:18px;
-
-    line-height:1.45;
-
-    max-width:85%;
-
-    margin-bottom:120px;
-  }
-
-  .button{
-    padding:13px 18px;
-
-    font-size:11px;
   }
 
   .content-section{
@@ -528,24 +500,14 @@ footer{
     flex-direction:column;
     align-items:flex-start;
 
-    gap:24px;
+    gap:20px;
   }
 
   .mission-page-logo{
     width:120px;
-
-    margin-top:0;
   }
 
-  .dark-band,
-  .light-section,
-  .events{
-    padding:28px 24px;
-  }
-
-  .features,
-  .split,
-  .event-grid{
+  .features{
     grid-template-columns:1fr;
   }
 
@@ -561,26 +523,16 @@ footer{
     border-bottom:0;
   }
 
-  .patron{
-    grid-template-columns:80px 1fr;
+  .split{
+    grid-template-columns:1fr;
   }
 
-  .patron img{
-    width:80px;
-    height:80px;
+  .event-grid{
+    grid-template-columns:1fr;
   }
 
-  .quote{
-    font-size:16px;
-  }
-
-  .news-item{
-    grid-template-columns:100px 1fr;
-  }
-
-  .news-item img{
-    width:100px;
-    height:80px;
+  .events{
+    padding:40px 24px;
   }
 
   footer{
