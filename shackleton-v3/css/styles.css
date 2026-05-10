@@ -261,7 +261,10 @@ h1{
 
   padding:50px 72px;
 }
-
+.light-section p{
+  line-height:1.7;
+  margin-bottom:20px;
+}
 .split{
   display:grid;
   grid-template-columns:1fr 1fr;
