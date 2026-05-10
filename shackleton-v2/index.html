@@ -401,6 +401,7 @@ footer{
 /* MOBILE */
 
 @media(max-width:800px){
+@media(max-width:800px){
 
   .page{
     margin:0;
@@ -416,35 +417,63 @@ footer{
     display:none;
   }
 
-.mission-logo{
-  position:absolute;
+  .mission-logo{
+    position:absolute;
 
-  top:110px;
-  right:42px;
+    top:150px;
+    right:18px;
 
-  width:18vw;
-  height:auto;
+    width:90px;
+    height:auto;
 
-  display:block;
+    opacity:.9;
 
-  object-fit:contain;
-
-  opacity:.95;
-
-  z-index:5;
-}
+    z-index:5;
+  }
 
   .hero{
-    min-height:470px;
-    padding:34px 24px;
+    min-height:360px;
+
+    padding:26px 24px;
+
+    overflow:hidden;
+  }
+
+  .hero::before{
+    background-size:cover;
+    background-position:62% center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .kicker{
+    font-size:11px;
+    letter-spacing:2px;
+
+    margin-bottom:12px;
   }
 
   h1{
-    font-size:48px;
+    font-size:34px;
+    line-height:.95;
+
+    margin-bottom:18px;
   }
 
   .hero p{
-    font-size:18px;
+    font-size:16px;
+    line-height:1.4;
+
+    margin-bottom:24px;
+  }
+
+  .button{
+    padding:12px 18px;
+
+    font-size:11px;
+    letter-spacing:1px;
   }
 
   .dark-band,
@@ -456,14 +485,14 @@ footer{
 
   .features,
   .split,
-  .event-grid,
-  .briefing{
+  .event-grid{
     grid-template-columns:1fr;
   }
 
   .feature{
     border-right:0;
     border-bottom:1px solid rgba(255,255,255,.14);
+
     padding:24px 0;
   }
 
@@ -480,6 +509,10 @@ footer{
     height:80px;
   }
 
+  .quote{
+    font-size:16px;
+  }
+
   .news-item{
     grid-template-columns:100px 1fr;
   }
@@ -491,7 +524,9 @@ footer{
 
   footer{
     display:block;
+
     text-align:center;
+
     padding:24px;
   }
 
@@ -500,14 +535,6 @@ footer{
   }
 
 }
-
-</style>
-</head>
-
-<body>
-
-<div class="page">
-
 <!-- NAVIGATION -->
 
 <nav>
