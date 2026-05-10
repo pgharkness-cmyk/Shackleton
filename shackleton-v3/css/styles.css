@@ -1,1 +1,263 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#09121d;
+  font-family:Arial,Helvetica,sans-serif;
+  color:white;
+}
+
+.page{
+  max-width:1280px;
+  margin:28px auto;
+  border-radius:20px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);
+  background:#02060c;
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+}
+
+/* NAVIGATION */
+
+nav{
+  height:82px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 72px;
+
+  background:#020408;
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.logo a{
+  color:white;
+  text-decoration:none;
+}
+
+.nav-links{
+  display:flex;
+  gap:34px;
+}
+
+.nav-links a{
+  color:rgba(255,255,255,.78);
+
+  text-decoration:none;
+
+  font-size:13px;
+  font-weight:700;
+
+  text-transform:uppercase;
+  letter-spacing:1px;
+
+  transition:.2s;
+}
+
+.nav-links a:hover{
+  color:white;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+
+  min-height:520px;
+
+  display:flex;
+  align-items:center;
+
+  padding:80px 72px;
+
+  overflow:hidden;
+
+  background:#000;
+}
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.25),
+      rgba(0,0,0,.6)
+    ),
+    url("../assets/images/earthrise.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  z-index:0;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+
+  max-width:680px;
+}
+
+.kicker{
+  color:#8bb8ff;
+
+  font-size:13px;
+
+  letter-spacing:3px;
+  text-transform:uppercase;
+
+  margin-bottom:18px;
+}
+
+h1{
+  font-size:82px;
+  line-height:.95;
+
+  letter-spacing:4px;
+  text-transform:uppercase;
+
+  margin-bottom:24px;
+}
+
+.hero p{
+  font-size:24px;
+  line-height:1.5;
+
+  color:rgba(255,255,255,.92);
+
+  margin-bottom:34px;
+}
+
+.button{
+  display:inline-block;
+
+  background:white;
+  color:black;
+
+  padding:15px 24px;
+
+  border-radius:4px;
+
+  font-size:13px;
+  font-weight:800;
+
+  text-transform:uppercase;
+  letter-spacing:1px;
+
+  text-decoration:none;
+}
+
+/* CONTENT */
+
+.content-section{
+  padding:60px 72px;
+}
+
+.section-title{
+  font-size:20px;
+
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  margin-bottom:24px;
+}
+
+.content-section p{
+  color:rgba(255,255,255,.82);
+
+  line-height:1.7;
+
+  max-width:850px;
+
+  margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#020408;
+
+  padding:22px 72px;
+
+  display:flex;
+  justify-content:space-between;
+
+  color:rgba(255,255,255,.5);
+
+  font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .page{
+    margin:0;
+    border-radius:0;
+  }
+
+  nav{
+    padding:0 24px;
+    height:72px;
+  }
+
+  .nav-links{
+    gap:18px;
+  }
+
+  .nav-links a{
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:420px;
+
+    padding:48px 24px;
+  }
+
+  h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .content-section{
+    padding:40px 24px;
+  }
+
+  footer{
+    display:block;
+
+    text-align:center;
+
+    padding:24px;
+  }
+
+  footer div{
+    margin:8px 0;
+  }
+
+}
