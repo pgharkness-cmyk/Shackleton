@@ -14,38 +14,44 @@
 #personnelGrid {
     display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 24px 20px;
+    gap: 30px 20px;
     width: 100%;
 }
 
 #personnelGrid .personnelMember {
     width: 100% !important;
+    max-width: none !important;
     min-width: 0;
     margin: 0;
 }
 
+/* Force full-width square photographs */
 #personnelGrid .personnelMember img {
-    display: block;
+    display: block !important;
     width: 100% !important;
+    max-width: none !important;
     height: auto !important;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
     object-position: center;
     border-radius: 5px;
 }
 
+/* Tablet */
 @media (max-width: 800px) {
     #personnelGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
     #personnelGrid {
         grid-template-columns: 1fr !important;
     }
 }
 </style>
+
 
 </head>
 
